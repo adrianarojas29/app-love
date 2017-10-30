@@ -1,4 +1,4 @@
-/*CLASES REUTILIZABLES*/
+/* Clases reutilizables */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.71429;
-
+  font-family: 'Raleway';
 }
 
 img {
@@ -33,12 +33,6 @@ img {
 .container:before, .container:after {
   content: " ";
   display: table;
-}
-
-*:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 .container:after {
@@ -64,50 +58,158 @@ a {
 
 a:hover {
   color: #E95853;
+  cursor: pointer;
 }
 
 .text-uppercase {
   text-transform: uppercase;
 }
 
-/*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
+.inline-block {
+  display: inline-block;
+}
 
-header{
+
+/* Header */
+header {
   position: fixed;
-  font-weight: bold;
-  background: white;
-  width: 100%
-  heigth: 100px;
-  top:0;
+  background-color: #fff;
+  top: 0;
+  width: 100%;
+  padding: 15px 160px 15px 140px;
   z-index: 1000;
 }
 
-nav{
-  position: absolute;
-  top: 50px;
-  transform: translate(-50%);
-  left: 10%;
-  padding: 10px;
-}
-
-nav a{
-  margin: 20px;
-}
-
-img[alt='applove']{
-  float: right;
-  outline: 1px;
+header figure img {
   width: 70px;
-  margin-right: 8%;
 }
 
-section{
-  width: 100%;
+header figure {
+  float: right;
 }
 
-#bg-home>h2{
-  position: relative;
-  padding: 100px 0 40px 0;
+header div {
+  margin-top: 19px;
+}
+
+header div a {
+  margin: 0 20px;
+  font-weight: 700;
+}
+
+/* Intro */
+#intro {
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/images/bg-home.jpg);
+}
+
+#intro div {
+  padding: 60px 0 140px 0;
+}
+
+#intro h2 {
+  font-size: 24px;
   font-weight: bold;
+}
+
+#intro h1 {
+  font-size: 53px;
+}
+
+#intro a {
+  padding: 11px 20px;
+  background-color: rgb(46, 204, 113);
+  margin-top: 50px;
+  color: white;
+  font-size: 14px;
+  display: inline-block;
+}
+
+#intro a:hover {
+  color: #f17c72;
+}
+
+/* Serviciose */
+#services {
+  color: #fff;
+  background-color: #f17c72;
+  padding: 70px 0;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 35px;
+}
+
+#services div div {
+  display: inline-block;
+  width: 30%;
+}
+
+#services div div img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+#services h6, #services h5{
+  margin: 0
+}
+
+#services h4 {
+  margin-bottom: 70px;
+}
+
+/* Trabajo */
+#work {
+  padding: 70px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+#work h2 {
+  font-size: 35px;
+}
+
+#work img[alt="computer"] {
+  margin-top: 60px;
+  width: 80%;
+}
+
+.container-images {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.container-images .row{
+  width: 100%;
+  margin: 80px 0;
+}
+
+.container-images .row figure{
+  width: 30%;
+  display: inline-block;
   margin: 0;
+}
+
+.container-images .row figure img{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.container-images .row figure figcaption{
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  height: 70px;
+  background: #373b47;
+  color: #ffffff;
+  padding-top: 7px;
 }
